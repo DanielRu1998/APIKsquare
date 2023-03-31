@@ -23,4 +23,4 @@ Manage some topics like tasks and the user can be able to create, update, delete
 
 ### Consume services
 
-You can import postman collection on your enviroment and the performe some test with the endpoints.
+You can import postman collection on your enviroment and then do testing with the endpoints. You can find this collection on /documentation folder

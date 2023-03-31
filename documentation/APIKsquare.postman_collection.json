@@ -1,0 +1,241 @@
+{
+	"info": {
+		"_postman_id": "119ea180-1e0e-4a31-aae3-215c3e02c090",
+		"name": "APIKsquare",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7752191"
+	},
+	"item": [
+		{
+			"name": "deleteTask",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "k-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDI2NTVkZDdhZTliOTdiNTdmZTE2YTIiLCJpYXQiOjE2ODAyMzg2NDcsImV4cCI6MTY4MDI0OTQ0N30.YVO_rLNTbcNdfM0TW34x8M1FRz2xH3WbvZ-xlTLWy7E",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/tasks/642682b0abe7b96f944e1cd7",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"tasks",
+						"642682b0abe7b96f944e1cd7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "loginUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"test1@test1.com\",\n    \"password\": \"123456\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/auth/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getUsers",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Test3\",\n    \"email\": \"test1@test3.com\",\n    \"password\": \"123456\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/users",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getTasks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/tasks",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getTaskById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/tasks/64268b517b26c9b4c316b35f",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"tasks",
+						"64268b517b26c9b4c316b35f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateTask",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "k-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDI2NTVkZDdhZTliOTdiNTdmZTE2YTIiLCJpYXQiOjE2ODAyMzg2NDcsImV4cCI6MTY4MDI0OTQ0N30.YVO_rLNTbcNdfM0TW34x8M1FRz2xH3WbvZ-xlTLWy7E",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Master\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/tasks/64267d5c5ebe2287b5070bf0",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"tasks",
+						"64267d5c5ebe2287b5070bf0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createTask",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "k-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDI2NTVkZDdhZTliOTdiNTdmZTE2YTIiLCJpYXQiOjE2ODAyMzg2NDcsImV4cCI6MTY4MDI0OTQ0N30.YVO_rLNTbcNdfM0TW34x8M1FRz2xH3WbvZ-xlTLWy7E",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Terry cocomo\",\n    \"description\": \"This is the description fer\",\n    \"date\": \"07-21-1967\",\n    \"status\": \"completed\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/tasks",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Test1\",\n    \"email\": \"test1@test1.com\",\n    \"password\": \"123456\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/users",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
